@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="site-header">
+    <div class="logo" id="logo">
+      <h1>LOGO</h1>
+    </div>
+    <div class="nav">
+      <ul class="nav-menu">
+        <li id="profile"><a href="#">Profile</a></li>
+        <li><a href="#">Member</a></li>
+        <li><a href="#">Works</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="video">
+    <video width="100%" src="sample.mp4" type="video/mp4" controls loop autoplay muted>
+
+    </video>
+  </div>
+
+  <div class="profile">
+    <h2>Profile</h2>
+    <div class="container">
+      <div class="menber-1"></div>
+      <div class="menber-1"></div>
+      <div class="menber-1"></div>
+      <div class="menber-1"></div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    let siteHeader = document.getElementsByClassName('site-header')[0];
+    let logo = document.getElementById('logo');
+    let profile = document.getElementById('profile');
+
+    document.addEventListener('DOMContentLoaded', function() {
+      window.addEventListener('scroll', function() {
+        let y = window.pageYOffset;
+        if (y > 100) {
+          siteHeader.classList.add('transform');
+        } else {
+          siteHeader.classList.remove('transform');
+        }
+      },false);
+
+      logo.addEventListener('click', function() {
+        scrollTo(0, 0);
+      },false);
+
+      profile.addEventListener('click', function() {
+        console.log('hello');
+        scrollTo(0, 450);
+
+      },false);
+    }, false);
+
+  </script>
+</body>
+</html>
