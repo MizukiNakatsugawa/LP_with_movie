@@ -46,7 +46,7 @@
     document.addEventListener('DOMContentLoaded', function() {
       window.addEventListener('scroll', function() {
         let y = window.pageYOffset;
-        if (y > 100) {
+        if (y > 1) {
           siteHeader.classList.add('transform');
         } else {
           siteHeader.classList.remove('transform');
@@ -59,7 +59,7 @@
 
       profile.addEventListener('click', function() {
         console.log('hello');
-        scrollTo(0, 450);
+        scrollTo(0, 750);
 
       },false);
     }, false);

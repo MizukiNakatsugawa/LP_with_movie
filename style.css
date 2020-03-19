@@ -22,13 +22,13 @@ body {
   background: rgba(52, 152, 219,0.8);
   /* border: 1px solid red; */
   z-index: 1000;
-  transition: 1s ease;
+  transition: .3s ease;
   height: 100px;
 }
 
 .site-header.transform {
   background: linear-gradient(45deg, rgba(231, 76, 60,0.5), #f1c40f);
-  transition: 1s;
+  height: 65px;
 }
 
 .site-header .logo {
