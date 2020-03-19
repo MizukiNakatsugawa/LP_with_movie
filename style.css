@@ -56,7 +56,7 @@ body {
 
 .site-header .nav ul li {
   list-style: none;
-  padding: 20px;
+  padding: 18px;
 }
 
 .site-header .nav ul li:hover {
@@ -75,13 +75,13 @@ body {
   top: 100px;
 }
 
-.profile {
+.profile, .menber {
   margin-top: 150px;
   width: 100%;
   /* border: solid red; */
 }
 
-.profile h2 {
+.profile h2, .menber h2 {
   margin: 20px 60px;
   font-size: 25px;
 }
@@ -99,4 +99,10 @@ body {
   width: 150px;
   background: #fff;
   border-radius: 50%;
+}
+
+.menber .container {
+  height: 500px;
+  margin: 0 60px;
+  background: #fff;
 }
